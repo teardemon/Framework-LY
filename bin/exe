@@ -1,0 +1,8 @@
+#!/bin/bash
+# Author: LyonWong
+# Date: 2014-09-04
+# Desc: Execute php in command line interface
+
+source $(dirname $0)/_base.sh
+
+$BIN_PHP $PATH_ROOT/core/boot/boot_cli.php $*

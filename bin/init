@@ -1,0 +1,19 @@
+#!/bin/bash
+# Author: LyonWong
+# Date: 2014-09-19
+
+# options
+#  --all | --config -c | --database
+
+source $(dirname $0)/_base.sh
+
+while getopts :c opt; do
+    case $opt in
+        c)
+            $BIN_PHP $PATH_ROOT/core/bin/init.php config
+            ;;
+        \?)
+            echo 'Illegal options.'
+            ;;
+    esac
+done

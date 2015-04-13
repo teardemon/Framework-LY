@@ -1,0 +1,13 @@
+#!/bin/bash
+# Author: LyonWong
+# Date: 2014-09-03
+
+source $(dirname $0)/_base.sh
+
+locator='/'
+for argu in $*; do
+    if [ ${argu[@]:0:1} != '-' ]; then
+        locator=$argu
+    fi
+done
+$BIN_PHPUNIT --bootstrap $PATH_ROOT/core/boot/boot_test.php "$PATH_ROOT/test/phpunit/$locator" $*

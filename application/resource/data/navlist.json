@@ -1,0 +1,30 @@
+[
+    {
+        "href": "/index",
+        "name": "首页"
+    },
+    {
+        "href": "/demo",
+        "name": "示例",
+        "subm": [
+            {
+                "href": "/demo-template",
+                "name": "模板"
+            }
+        ]
+    },
+    {
+        "href": "/module",
+        "name": "组件",
+        "subm": [
+            {
+                "href": "/module-datepicker",
+                "name": "datapicker"
+            },
+            {
+                "href": "/module-bar",
+                "name": "Bar"
+            }
+        ]
+    }
+]
