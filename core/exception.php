@@ -56,6 +56,11 @@ trait traException
 {
     private $_descriptions = [];
 
+    public function throwException()
+    {
+
+    }
+
 
     public static function makeInfo($exception, $items = null)
     {
